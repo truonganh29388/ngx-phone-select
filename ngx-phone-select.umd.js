@@ -37,12 +37,6 @@ var NgxPhoneSelectDirective = (function () {
     NgxPhoneSelectDirective.prototype.setCountry = function (countryCode) {
         $(this.el.nativeElement).intlTelInput('setCountry', countryCode.toLowerCase());
     };
-    NgxPhoneSelectDirective.prototype.onlyCountries = function (countryCodes) {
-        $(this.el.nativeElement).intlTelInput({
-            preferredCountries: [],
-            onlyCountries: countryCodes
-        });
-    };
     /**
      * @return {?}
      */
